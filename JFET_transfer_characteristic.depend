@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1723241423 source:c:\users\daemon\documents\github\JFET_transfer_characteristic\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
