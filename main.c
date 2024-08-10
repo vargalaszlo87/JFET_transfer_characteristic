@@ -9,7 +9,7 @@
     Eq's:
     I_D = BETA' * (V_GS - V_TO')^2 * (1 + LAMBDA * V_DS)
 
-    V_DS = VDD - I_D * (R_D + R_S)
+    V_DS = V_DD - I_D * (R_D + R_S)
     BETA' = BETA * (1 + BETA_tce * (T - T_ref))
     V_TO' = V_TO + V_TOTC * (T - T_ref))
 
