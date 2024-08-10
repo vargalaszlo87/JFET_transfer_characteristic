@@ -30,7 +30,9 @@ This image is the output of C program.
 
 ![alt text](http://www.vargalaszlo.com/images/out/JFET_transfer_characteristic-02.jpg)
 
-## Code
+## source code
+
+```C
 
 #include <stdio.h>
 #include <stdlib.h>
