@@ -1,6 +1,6 @@
 # JFET transfer characteristic.
 
-This is a simple radio transmitter project. You can try the simulation files with ``LTspice`` and you can check the demo video too. Whit this circuit can you test an old radio. Let's try it, have a fun!
+This C project calculates the transfer characteristics of a JFET based on a SPICE model. In this case the model is the 2N3819 N-channel JFET. Optimization by Rd and Rs requires a nonlinear approximate solution. I use the newton method.
 
 ## Equation
 
