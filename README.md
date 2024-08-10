@@ -4,10 +4,10 @@ This is a simple radio transmitter project. You can try the simulation files wit
 
 ## Equation
 
-I_{D} = \beta' * (V_{GS} - V_{TO}')^2 * (1 + \lambda * V_{DS})\\
-V_{DS} = V_{DD} - I_{D} * (R_{D} + R_{S})\\
-\beta' = \beta * (1 + \beta_{tce} * (T - T_{ref}))\\
-V_{TO}' = V_{TO} * V_{TOtc} * (T - T_{ref})
+$$I_{D} = \beta' * (V_{GS} - V_{TO}')^2 * (1 + \lambda * V_{DS})__
+V_{DS} = V_{DD} - I_{D} * (R_{D} + R_{S})__
+\beta' = \beta * (1 + \beta_{tce} * (T - T_{ref}))__
+V_{TO}' = V_{TO} * V_{TOtc} * (T - T_{ref})$$
 
 
 ## Example images
