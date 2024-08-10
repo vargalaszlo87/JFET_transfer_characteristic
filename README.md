@@ -9,6 +9,12 @@ V_{DS} = V_{DD} - I_{D} * (R_{D} + R_{S})\\
 \beta' = \beta * (1 + \beta_{tce} * (T - T_{ref}))\\
 V_{TO}' = V_{TO} * V_{TOtc} * (T - T_{ref})$$
 
+
+$$\begin{multline*}
+p(x) = 3x^6 + 14x^5y + 590x^4y^2 + 19x^3y^3\\ 
+- 12x^2y^4 - 12xy^5 + 2y^6 - a^3b^3
+\end{multline*}$$
+
 ## Example images
 
 This image was created using Excel from raw output data.
