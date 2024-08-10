@@ -4,7 +4,7 @@ This is a simple radio transmitter project. You can try the simulation files wit
 
 ## Equation
 
-$I_{D} = \beta' * (V_{GS} - V_{TO}')^2 * (1 + \lambda * V_{DS})
+$$I_{D} = \beta' * (V_{GS} - V_{TO}')^2 * (1 + \lambda * V_{DS})$$
 
 ## Example images
 
