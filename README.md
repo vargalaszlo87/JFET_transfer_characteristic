@@ -2,6 +2,10 @@
 
 This is a simple radio transmitter project. You can try the simulation files with ``LTspice`` and you can check the demo video too. Whit this circuit can you test an old radio. Let's try it, have a fun!
 
+## Equation
+
+$I_{D} = \beta' * (V_{GS} - V_{TO}')^2 * (1 + \lambda * V_{DS})
+
 ## Example images
 
 This image was created using Excel from raw output data.
