@@ -93,13 +93,13 @@ int main()
     calc.solverMaxIteration = 100;
 
     // calculation
-    characteristic out;
+    characteristic transfer;
 
-    out.V_GS = -3.0;
+    transfer.V_GS = -3.0;
     printf ("V_GS[V]\tI_D[mA]\n");
-    for (out.V_GS ; out.V_GS <= 0.0 ; out.V_GS += calc.V_GSStep) {
-        out.I_D = solveI_D(&calc, &_2N3819, out.V_GS);
-        printf ("%.2f\t%.4f\n",out.V_GS, out.I_D * 1000);
+    for (transfer.V_GS ; transfer.V_GS <= 0.0 ; transfer.V_GS += calc.V_GSStep) {
+        transfer.I_D = solveI_D(&calc, &_2N3819, transfer.V_GS);
+        printf ("%.2f\t%.4f\n",transfer.V_GS, transfer.I_D * 1000);
     }
     return 0;
 }
