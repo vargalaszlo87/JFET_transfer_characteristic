@@ -32,6 +32,7 @@ typedef struct _calculation {
     double T;
     double T_ref;
     double V_GSStep;
+    double V_DSStep;
     double solverTolerance;
     double solverMaxIteration;
 } calculation;
