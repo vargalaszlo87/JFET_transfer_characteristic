@@ -24,7 +24,7 @@ $$V_{TO}' = V_{TO} * V_{TOtc} * (T - T_{ref})$$
 
 This image was created using Excel from raw output data.
 
-![alt text](http://www.vargalaszlo.com/images/out/JFET_transfer_characteristic-01.jpg)
+![alt text2](http://www.vargalaszlo.com/images/out/JFET_transfer_characteristic-01.jpg)
 
 This image is the output of C program.
 
