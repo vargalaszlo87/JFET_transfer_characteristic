@@ -1,6 +1,6 @@
-# JFET transfer characteristic.
+# JFET transfer characteristic
 
-This C project calculates the transfer characteristics of a JFET based on a SPICE model. In this case the model is the 2N3819 N-channel JFET. Optimization by Rd and Rs requires a nonlinear approximate solution. I use the newton method.
+This C project calculates the transfer characteristic of a JFET based on a SPICE model. In this case the model is the 2N3819 N-channel JFET. Optimization by Rd and Rs requires a nonlinear approximate solution. I use the newton method.
 
 ## SPICE model
 
