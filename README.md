@@ -14,7 +14,7 @@ $$I_{D} = \beta' * (V_{GS} - V_{TO}')^2 * (1 + \lambda * V_{DS})$$
 $$V_{DS} = V_{DD} - I_{D} * (R_{D} + R_{S})$$
 
 
-$$\beta' = \beta * (1 + \beta_{tce} * (T - T_{ref}))$$
+$$\beta' = \beta * exp(\beta_{tce} * (T - T_{ref}))$$
 
 
 $$V_{TO}' = V_{TO} * V_{TOtc} * (T - T_{ref})$$
