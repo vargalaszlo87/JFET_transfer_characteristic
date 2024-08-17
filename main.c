@@ -32,6 +32,7 @@ typedef struct _calculation {
     double T;
     double T_ref;
     double V_GSStep;
+    double V_DSStep;
     double solverTolerance;
     double solverMaxIteration;
 } calculation;
@@ -55,7 +56,7 @@ double solveI_D(calculation* cal, jfet* fet, double V_GSActual) {
 
     // correction
     V_TOCorrected = fet->V_TO + fet->V_TOtc * (cal->T - cal->T_ref);
-    BETACorrected = fet->BETA * (1 + fet->BETA_tce * (cal->T - cal->T_ref));
+    BETACorrected = fet->BETA * exp(fet->BETA_tce * (cal->T - cal->T_ref));
 
     // Newton method
     do {
@@ -93,13 +94,13 @@ int main()
     calc.solverMaxIteration = 100;
 
     // calculation
-    characteristic out;
+    characteristic transfer;
 
-    out.V_GS = -3.0;
+    transfer.V_GS = -3.0;
     printf ("V_GS[V]\tI_D[mA]\n");
-    for (out.V_GS ; out.V_GS <= 0.0 ; out.V_GS += calc.V_GSStep) {
-        out.I_D = solveI_D(&calc, &_2N3819, out.V_GS);
-        printf ("%.2f\t%.4f\n",out.V_GS, out.I_D * 1000);
+    for (transfer.V_GS ; transfer.V_GS <= 0.0 ; transfer.V_GS += calc.V_GSStep) {
+        transfer.I_D = solveI_D(&calc, &_2N3819, transfer.V_GS);
+        printf ("%.2f\t%.4f\n",transfer.V_GS, transfer.I_D * 1000);
     }
     return 0;
 }
